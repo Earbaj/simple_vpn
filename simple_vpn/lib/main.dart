@@ -166,7 +166,7 @@ class _SplashScreenState extends State<SplashScreen> {
                               _isChecked = value ?? false;
                             });
                           },
-                          activeColor: isDarkMode ? Colors.white : Colors.black,
+                          activeColor: isDarkMode ? Colors.white : Colors.blue,
                         ),
                         // Policy Text
                         RichText(
@@ -177,9 +177,9 @@ class _SplashScreenState extends State<SplashScreen> {
                               fontSize: 14,
                             ),
                             children: [
-                              const TextSpan(text: 'By clicking Get Started you agree to our\n '),
+                              const TextSpan(text: 'By clicking \'Get Started\' you agree to our\n '),
                               TextSpan(
-                                text: 'Privacy Policy',
+                                text: ' Privacy Policy',
                                 style: const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   decoration: TextDecoration.underline,
@@ -221,8 +221,8 @@ class _SplashScreenState extends State<SplashScreen> {
                       }
                           : null, // Disabled if checkbox isn’t checked
                       style: ElevatedButton.styleFrom(
-                        foregroundColor: isDarkMode ? Colors.black : Colors.white,
-                        backgroundColor: isDarkMode ? Colors.white : Colors.black,
+                        foregroundColor: isDarkMode ? Colors.blue : Colors.white,
+                        backgroundColor: isDarkMode ? Colors.white : Colors.blue,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20), // Circular border
                         ),
